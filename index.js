@@ -45,6 +45,7 @@ export default class amogus extends Plugin {
   }
 
   stop () {
-    unpatch('dababypng')
+    unpatch('dababypng');
+	window.location.reload()
   }
 }
