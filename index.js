@@ -36,6 +36,10 @@ export default class amogus extends Plugin {
           const element = username[i];
           element.innerHTML = "DaBaby"
         }
+		const click = document.addEventListener("click",         function play() {
+            var audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
+            audio.play();
+          })
         return res;
       })
   }
