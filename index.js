@@ -13,7 +13,7 @@ import { getModule } from "@vizality/webpack";
 import { patch, unpatch } from "@vizality/patcher"
 
 
-export default class amogus extends Plugin {
+export default class  extends Plugin {
   start () {
       const Message = getModule(m => m.type && m.type.displayName === 'MessageContent')
       console.log(Message)
@@ -36,9 +36,9 @@ export default class amogus extends Plugin {
           const element = username[i];
           element.innerHTML = "DaBaby"
         }
-		      const click = document.addEventListener("click",         function play() {
-            var audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
-            audio.play();
+		  const Audio = document.addEventListener("click",         function play() {
+        var audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
+        audio.play();
           })
         return res;
       })
