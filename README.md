@@ -1,5 +1,5 @@
-##DaBaby Plugin
-#Lesgooo
+# DaBaby Plugin
+## Lesgooo
 
 Credits where due:
 [MoltenCore](https://github.com/MoltenCoreDev) for [base](https://github.com/MoltenCoreDev/amogus) of the plugin
