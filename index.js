@@ -13,11 +13,11 @@ import { getModule } from "@vizality/webpack";
 import { patch, unpatch } from "@vizality/patcher"
 
 
-export default class  extends Plugin {
+export default class dababy extends Plugin {
   start () {
       const Message = getModule(m => m.type && m.type.displayName === 'MessageContent')
       console.log(Message)
-      patch('dababypng', Message, 'type', (args, res) => {
+      patch('dababypng', Message, 'type', (_args, res) => {
       const img = document.getElementsByTagName("img")
       for (let i = 0; i < img.length; i++) {
         const element = img[i];
@@ -36,7 +36,7 @@ export default class  extends Plugin {
           const element = username[i];
           element.innerHTML = "DaBaby"
         }
-		  const Audio = document.addEventListener("click",         function play() {
+		  const audio = document.addEventListener("click",         function play() {
         var audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
         audio.play();
           })
@@ -46,5 +46,6 @@ export default class  extends Plugin {
 
   stop () {
     unpatch('dababypng');
+    setTimeout(() => window.location.reload(),2000)
   }
 }
