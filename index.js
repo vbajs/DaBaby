@@ -15,6 +15,33 @@ import { patch, unpatch } from "@vizality/patcher"
 
 export default class dababy extends Plugin {
   start () {
+    $vz.commands.registerCommand({
+      command: "dababy",
+      description: "lesgooo",
+      executor: () => {return {
+        send: false,
+        result: {
+         const :Toast = vizality.api.notifications.sendToast({
+  header: 'DaBaby',
+  content: 'I will turn a discord rebrand into a convertibile',
+  icon: {
+    url: 'https://cdn.discordapp.com/attachments/803993444917051404/842774092411174942/convertibile.png',
+    size: '512'
+  },
+  showCloseButton: false,
+  autoClose: false,
+  buttons: [
+    {
+      text: 'lesgooo',
+      color: 'green'
+    }
+  ]
+}),
+        }
+      }
+    }
+  })
+
       const Message = getModule(m => m.type && m.type.displayName === 'MessageContent')
       console.log(Message)
       patch('dababypng', Message, 'type', (_args, res) => {
