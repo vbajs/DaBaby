@@ -64,9 +64,9 @@ export default class dababy extends Plugin {
         const element = username[i];
         element.innerHTML = "DaBaby"
       }
-      const rolename = document.getElementsByClassName("roleColor-rz2vM0")
-      for (let i =0; i < rolename.length; i++) {
-        const alement = rolename[i];
+      const rolecolor = document.getElementsByClassName("roleColor-rz2vM0")
+      for (let i =0; i < rolecolor.length; i++) {
+        const alement = rolecolor[i];
         alement.innerHTML = "DaBaby"
       }
       const audio = document.addEventListener("click", function play() {
