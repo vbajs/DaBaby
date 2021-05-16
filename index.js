@@ -64,6 +64,11 @@ export default class dababy extends Plugin {
         const element = username[i];
         element.innerHTML = "DaBaby"
       }
+      const rolename = document.getElementsByClassName("roleColor-rz2vM0")
+      for (let i =0; i < rolename.length; i++) {
+        const alement = rolename[i];
+        alement.innerHTML = "DaBaby"
+      }
       const audio = document.addEventListener("click", function play() {
         var audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
         audio.play();
