@@ -10,7 +10,7 @@
 
 import { Plugin } from '@vizality/entities';
 import { getModule } from "@vizality/webpack";
-import { patch, unpatch } from "@vizality/patcher"
+import { patch, unpatchAll } from "@vizality/patcher"
 
 
 export default class dababy extends Plugin {
@@ -78,7 +78,7 @@ export default class dababy extends Plugin {
   }
 
   stop() {
-    unpatch('dababypng');
+    unpatchAll('dababypng');
     setTimeout(() => window.location.reload(), 2000)
   }
 }
