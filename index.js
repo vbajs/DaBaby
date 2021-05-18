@@ -86,6 +86,11 @@ export default class dababy extends Plugin {
         const element = currentchannelname[i];
         element.innerHTML = 'lesgooo';
       }
+      const channeltopic = document.getElementsByClassName('topic-TCb_qw expandable-9fI_e3');
+      for (let i = 0; i < channeltopic.length; i++) {
+        const element = channeltopic[i];
+        element.innerHTML = 'A channel to be a convertible on';
+      }
       document.addEventListener('click', () => {
         const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
         audio.play();
