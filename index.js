@@ -81,6 +81,11 @@ export default class dababy extends Plugin {
         const element = guildname[i];
         element.innerHTML = 'DaBabyCord';
       }
+      const currentchannelname = document.getElementsByClassName('title-29uC1r base-1x0h_U size16-1P40sf');
+      for (let i = 0; i < currentchannelname.length; i++) {
+        const element = currentchannelname[i];
+        element.innerHTML = 'lesgooo';
+      }
       document.addEventListener('click', () => {
         const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
         audio.play();
