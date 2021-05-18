@@ -112,12 +112,7 @@ export default class dababy extends Plugin {
         const element = you[i];
         element.innerHTML = 'DaBaby';
       }
-      /*
-       *  document.addEventListener('click', () => {
-       *  const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
-       *  audio.play();
-       *  });
-       */
+
       return res;
     });
   }
