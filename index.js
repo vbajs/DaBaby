@@ -17,7 +17,7 @@ export default class dababy extends Plugin {
   start () {
     $vz.commands.registerCommand({
       command: 'dababy',
-      description: 'lesgooo',
+      description: 'Toast to help you with the discord rebrand',
       executor: () => {
         return {
           send: false,
@@ -38,6 +38,22 @@ export default class dababy extends Plugin {
                   color: 'green'
                 }
               ]
+            })
+          }
+        };
+      }
+    });
+    $vz.commands.registerCommand({
+      command: 'lesgooo',
+      description: 'Audio on click to further enchance the DaBabyCord experience',
+      executor: () => {
+        return {
+          send: false,
+          return: {
+            // eslint-disable-next-line no-undef
+            const: Click = document.addEventListener('click', () => {
+              const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
+              audio.play();
             })
           }
         };
@@ -96,10 +112,12 @@ export default class dababy extends Plugin {
         const element = you[i];
         element.innerHTML = 'DaBaby';
       }
-      document.addEventListener('click', () => {
-        const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
-        audio.play();
-      });
+      /*
+       *  document.addEventListener('click', () => {
+       *  const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
+       *  audio.play();
+       *  });
+       */
       return res;
     });
   }
