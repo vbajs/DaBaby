@@ -91,6 +91,11 @@ export default class dababy extends Plugin {
         const element = channeltopic[i];
         element.innerHTML = 'A channel to be a convertible on';
       }
+      const you = document.getElementsByClassName('size14-e6ZScH title-eS5yk3');
+      for (let i = 0; i < you.length; i++) {
+        const element = you[i];
+        element.innerHTML = 'DaBaby';
+      }
       document.addEventListener('click', () => {
         const audio = new Audio('https://cdn.discordapp.com/attachments/803993444917051404/825720198627459092/lesgoo.mp3');
         audio.play();
