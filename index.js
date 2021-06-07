@@ -118,7 +118,7 @@ export default class dababy extends Plugin {
   }
 
   stop () {
-    unpatchAll('dababypng');
+    unpatchAll('da-baby');
     setTimeout(() => window.location.reload(), 2000);
   }
 }
